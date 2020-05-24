@@ -74,7 +74,6 @@ class Main extends PluginBase {
         $commandMap = $this->getServer()->getCommandMap();
         $commandMap->registerAll('mavoric', [
             new alert($this),
-            new mban($this),
             new mreport($this),
             new banwave($this)
         ]);
